@@ -1,0 +1,32 @@
+{
+    "Indonesia": {
+        "lang": "Indonesian",
+        "capital": "Jakarta",
+        "currency": "Rupiah"
+    },
+    "Malaysia": {
+        "lang": ["Melayu", "English"],
+        "capital": "Kuala Lumpur",
+        "currency": "Ringgit"
+    },
+    "Singapore": {
+        "lang": ["English", "Melayu", "Chinese"],
+        "capital": "Singapore",
+        "currency": "Singaporean Dollar"
+    },
+    "Thailand": {
+        "lang": "Thai",
+        "capital": "Bangkok",
+        "currency": "Baht"
+    },
+    "Japan": {
+        "lang": "Japanese",
+        "capital": "Tokyo",
+        "currency": "Yen"
+    },
+    "China": {
+        "lang": "Chinese",
+        "capital": "Beijing",
+        "currency": "Renminbi"
+    }
+}
