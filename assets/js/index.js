@@ -1,6 +1,6 @@
 const listTabDiv = $("#list-tab")
 const tabContentDiv = $('#nav-tabContent')
-$.getJSON("https://immense-plains-36763.herokuapp.com/asiancountries", data => {
+$.getJSON("http://localhost:3000/asiancountries", data => {
 
 
     $.each(data, (item) => {
