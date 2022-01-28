@@ -2,8 +2,6 @@ const express = require('express')
 const ejs = require('ejs')
 const port = process.env.PORT || 3000
 const fs = require("fs")
-let data = fs.readFileSync('asian-countries.json')
-let items = JSON.parse(data);
 const cors = require("cors")
 
 const app = express()
@@ -16,6 +14,7 @@ app.get('/asiancountries', allItems)
 function allItems(request, response) {
   response.send(items)
 }
+
 app.get('/asiancountries/:asiancountry/', search);
 
 function search(request, response) {
@@ -33,6 +32,8 @@ function search(request, response) {
 
 // View
 app.get('/', function (req, res) {
+  let data = fs.readFileSync('asian-countries.json')
+  let items = JSON.parse(data)
   ejs.renderFile('views/home.ejs', { items }, {}, (err, template) => {
     if (err) throw err
     res.end(template)
